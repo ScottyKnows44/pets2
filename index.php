@@ -11,7 +11,11 @@ $f3 = Base::instance();
 $f3->route('GET / ', function(){
     //echo '<h1>It is raining today</h1>';
     $view = new Template();
-    echo $view->render('views/home.html');
+    echo $view->render('views/pet-home.html');
+});
+
+$f3->route('GET /order ', function(){
+    echo "Order Page";
 });
 
 $f3-> run();
