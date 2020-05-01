@@ -15,7 +15,8 @@ $f3->route('GET / ', function(){
 });
 
 $f3->route('GET /order ', function(){
-    echo "Order Page";
+    $view = new Template();
+    echo $view->render('views/pet-order.html');
 });
 
 $f3-> run();
